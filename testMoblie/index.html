@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/meyer.css">
+    <!-- <link rel="stylesheet" href="./css/index.css"> -->
+   <script src="./js/flexible.js"></script>
+<style>
+    /* 因为是flexible是按屏幕大小分的，所以需要限定  */
+@media screen and (min-width:750px){
+    html{
+        font-size: 75px !important;
+    }
+}
+
+body {
+    min-width: 4.26rem;
+    max-width: 10rem;
+    /* set 1rem = viewWidth / 10   */
+    /* width: 10rem; */
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+}
+ /* cssrem  设定在750px 下的 基准字号，75px ，因为set 1rem = viewWidth / 10  */
+ div{
+     float: left;
+    width: 2.666667rem;      /*(200rem / 75)*/
+    height: 2.666667rem;
+    background-color: saddlebrown;
+    font-size: .213333rem;
+}
+div:nth-child(4){
+    width: 2rem;
+}
+</style>
+</head>
+
+<body>
+<div>fdfd</div>
+<div>fdfd</div>
+<div>fdfd</div>
+<div>fdfd</div>
+</body>
+
+</html>

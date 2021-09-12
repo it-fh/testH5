@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .app{
+            /* 写上position才能确定高度 */
+            position: fixed; 
+            width: 100%;
+            height: 100%;
+        }
+        .header{
+            background-color: #000;
+            width: 100%;
+            height: 60px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            padding-top: 60px;
+            box-sizing: border-box;
+        }
+        .left{
+            width: 300px;
+            height: 100%;
+            float: left;
+            background-color: gold;
+            margin-right: 30px;
+            padding: 20px;
+            overflow: auto;
+            box-sizing: border-box;
+        }
+        .main{
+            overflow: hidden;
+            height: 100%;
+            background-color: green;
+            overflow: auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <div class="header"></div>
+        <div class="container">
+            <div class="left">lorem1000</div>
+            <div class="main">lorem1000</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+@no: 15;
+
+/////其实不分配比例也行，只是在计算时的时候例如字体的时候会显得很小，但没影响
+
+html{
+    font-size: 50px;
+}
+ @media screen and (max-width: 319px) {
+     html {
+        font-size: (319px / @no);
+    }
+ }
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: (320px / @no);
+    }
+}
+
+@media screen and (min-width: 360px) {
+    html {
+        font-size: (360px / @no);
+    }
+}
+
+
+@media screen and (min-width: 375px) {
+    html {
+        font-size: (375px / @no);
+    }
+}
+
+@media screen and (min-width: 384px) {
+    html {
+        font-size: (384px / @no);
+    }
+}
+
+@media screen and (min-width: 400px) {
+    html {
+        font-size: (400px / @no);
+    }
+}
+
+@media screen and (min-width: 414px) {
+    html {
+        font-size: (414px / @no);
+    }
+}
+
+@media screen and (min-width: 424px) {
+    html {
+        font-size: (424px / @no);
+    }
+}
+
+@media screen and (min-width: 480px) {
+    html {
+        font-size: (480px / @no);
+    }
+}
+
+@media screen and (min-width: 540px) {
+    html {
+        font-size: (540px / @no);
+    }
+}
+
+@media screen and (min-width: 720px) {
+    html {
+        font-size: (720px / @no);
+    }
+}
+
+@media screen and (min-width: 750px) {
+    html {
+        font-size: (750px / @no);  // 50
+    }
+}
+
+body{
+    // 以750px 设计稿来做
+    min-width:6.4rem;  // 320 /50
+    max-width: 15rem;  // 750/ 50 
+    // min-width:320px;
+    // width: 15rem;
+    margin: 0 auto;
+    // line-height: 1.5;
+    // font-family: Arial, Helvetica, sans-serif;
+    // background-color: #f2f2f2;
+}
+
+//  例如使用750的设计稿，就量好设计稿上的尺寸然后除以该设计稿下的html字体大小值
+div{
+    float: left;
+    width:(200rem / 50);
+    height: (200rem / 50);
+    background-color: saddlebrown;
+    font-size:(16rem / 50);
+}
+div:nth-child(4){
+    width:(150rem /50);
+}

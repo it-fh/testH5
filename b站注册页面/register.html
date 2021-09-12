@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/meyer.css">
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+<body>
+
+    <!-- 注册头部img -->
+    <div class="Img">
+        <div class="topImg"></div>
+    </div>
+    <!-- 注册主体区域 -->
+    <div class="form">
+        <!-- 注册 -->
+        <h2><span>注册</span></h2>
+        <!-- 昵称 -->
+        <div class="form-area">
+            <div class="form-item hasError">
+                <input type="text" placeholder="昵称">
+                <div class="error">该昵称已被占用</div>
+            </div>
+            <!-- 密码 -->
+            <div class="form-item hasError">
+                <input type="password" placeholder="密码（6-16个字符组成，区分大小写）">
+                <div class="error">请输入6~16位(包含数字和大小写字母)</div>
+            </div>
+            <!-- 绑定手机号 -->
+            <div class="form-item clearfix hasError">
+                <div class="select-area ">
+                    <div class="title">中国大陆</div>
+                    <ul>
+                        <li>Lorem.</li>
+                        <li>Vuptatibusluptatibus.</li>
+                        <li>Nemo.</li>
+                        <li>Quidem.</li>
+                        <li>Voluptatum.</li>
+                        <li>Voluptatibusluptatibus?</li>
+                        <li>Impedit.</li>
+                        <li>Laboriosam!</li>
+                        <li>Fugit!</li>
+                        <li>Neque?</li>
+                    </ul>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="填写常用手机号">
+                </div>
+
+                <div class="error">请输入正确手机号</div>
+            </div>
+            <!-- 验证码 -->
+            <div class="form-item">
+                <input type="text" class='valInput' placeholder="请输入短信验证码">
+                <button type="button">点击获取</button>
+            </div>
+            <!-- 同意事项 -->
+            <div class="form-item agree">
+                <label> <input type="checkbox">
+                    <span class="mybox"></span>我已同意 </label> <span class="biliyes"><a href="">《哔哩哔哩弹幕网用户使用协议》</a> 和<a
+                        href="">《哔哩哔哩隐私政策》</a></span>
+            </div>
+
+            <!-- 注册按钮 -->
+            <div class="form-item">
+                <button disabled  type="button">注册</button>
+            </div>
+
+            <!-- 已有账号，直接登录 -->
+            <div class="login"><a href="">已有账号，直接登录></a></div>
+        </div>
+    </div>
+</body>
+
+</html>

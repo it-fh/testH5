@@ -1,0 +1,116 @@
+ .header{
+    height: 60px;
+    background-color: #47464a;
+    text-align: center;
+    min-width: 1200px;min-width: 1200px;min-width: 1200px;min-width: 1200px;min-width: 1200px;min-width: 1200px;
+}
+ .header a{
+ margin: 0 37px;
+ line-height: 60px;
+ color: #999;
+}
+ .header a:hover{
+    color: #fff;
+}
+.header a.active{
+    color: #ef4238;
+}
+
+.main .container{
+    width: 1120px; width: 1120px; width: 1120px; width: 1120px; width: 1120px; width: 1120px; width: 1120px;
+    margin: 0 auto;
+    line-height:2;
+}
+
+.main .container .choose-item{
+    border:1px solid #e5e5e5;
+    padding: 0 15px;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.main .container .choose-item .item{
+    padding: 14px 0;
+    border-bottom: 1px solid #ccc;
+
+}
+.main .container .choose-item .item:last-child{
+    border: none;
+}
+.main .container .choose-item .item .left{
+    float: left;
+    color:#999;
+    margin:0  10px;
+}
+.main .container .choose-item .item .right{
+    width: 950px;
+    float: left;
+}
+.main .container .choose-item .item .right li{
+    padding: 0 5px;
+    float: left;
+    margin:0 7px;
+}
+.main .container .choose-item .item .right li:hover{
+    color:#ef4238;
+}
+.main .container .choose-item .item .right li.active{
+    color: #fff;
+    border-radius: 20px;
+    background-color: #ef4238;
+}
+.main .container .choose-moive{
+    margin:20px 0;
+}
+.main .container .moive{
+    margin-right: 32px;
+    text-align: center;
+    width: 160px;
+    margin-bottom:5px ;
+}
+.main .container .moive .moiveName{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.main .container .moive img{
+    width: 160px;
+    height: 220px;
+}
+.main .container .moive .score{
+    font-style: italic;
+    color: #ffb400;
+}
+.main .container .moive .score::first-letter{
+    font-size: 20px;
+}
+.main .container .moive{
+    float: left;
+
+}
+.main .container .moive:nth-child(6n){
+   margin-right: 0;
+}
+.main .container  .page{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.main .container  .page a{
+    height: 35px;
+    display: inline-block;
+    border:1px solid #ccc;
+    padding:0 15px;
+    line-height: 35px;
+}
+
+.main .container  .page a:hover{
+ border:1px solid red;
+}
+.main .container  .page a.active{
+    color: #fff;
+    background-color: #ef4238;
+    border: 1px solid red;
+}
+

@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    height: 200px;
+}
+div:nth-child(1){
+    background-color: cornsilk;
+}div:nth-child(2){
+    background-color: red;
+}

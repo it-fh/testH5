@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./meyer.css">
+    <style>
+        .header{
+            background-color: #ddd;
+            height: 50px;
+            line-height: 50px;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .header .subMenu{
+            width: 1000px;
+            margin: auto;
+        }
+        .header .subMenu li{
+            position: relative;
+            text-align: center;
+            float: left;
+            width: 100px;
+            padding:0 10px;
+            color:black;
+            margin: 0 20px;
+            height: 50px;
+            box-sizing: border-box;
+            border: 2px solid transparent;
+            border-bottom: none;
+        }
+        .header .subMenu li:hover{
+            border: 2px solid #008c8c;
+                background-color: #fff;
+        }
+    
+        .header .subMenu li:hover::after{
+            content: '';
+            position: absolute;
+            height: 5px;
+            width: 100%;
+            background-color: #fff;
+            bottom: -5px;
+            right: 0;
+        }
+
+        .header .subMenu .inner{
+            display: none;
+            padding: 10px;
+            position:absolute;
+            border: 2px solid #008c8c;
+            text-align: left;
+            line-height: 1;
+            width: 500px;
+           top:48px;
+            right: -2px;
+        }
+    
+        .header .subMenu li:hover .inner{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <ul class="subMenu clearfix">
+            <li><a href="">Lorem.</a></li>
+            <li><a href="">Facilis?</a></li>
+            <li><a href="">Ut.</a></li>
+            <li><a href="">Iusto.</a>
+                <div class="inner">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, aperiam. Eveniet debitis qui provident dolorem! Velit id maxime dolorum veritatis temporibus laudantium non quod saepe delectus beatae! Molestias, ea facilis.
+                </div>
+            </li>
+            <li><a href="">Magnam!</a></li>
+        </ul>
+    </header>
+</body>
+</html>

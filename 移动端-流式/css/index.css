@@ -1,0 +1,195 @@
+
+/*点击高亮需要清除样式例如 (a)*/
+*{
+    -webkit-tap-highlight-color:transparent;
+}
+
+/*移动端浏览器默认的外观(例如input button )在ios上有默认样式*/
+input ,button{
+    -webkit-appearance:none;
+}
+
+/*禁用长按页面时弹出菜单  (img,a)*/
+img ,a{
+    -webkit-touch-callout:none;
+}
+
+body{
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 12px;
+    font-family: -apple-system,Helvetica, sans-serif;
+    color: #666;
+    line-height: 1.5;
+}
+
+.app{
+    height: 50px;
+    background-color: crimson;
+}
+.app ul li{
+    float: left;
+    height: 50px;
+    background-color: #232326;
+
+}
+.app ul li:nth-child(1){
+    width: 10%;
+    text-align: center;
+    line-height: 50px;
+}
+.app ul li:nth-child(1) img{
+    width: 15px;
+   
+}
+.app ul li:nth-child(2){
+    width: 15%;
+}
+.app ul li:nth-child(2) img{
+    width: 40px;
+    margin-top: 3px;
+}
+.app ul li:nth-child(3){
+    width: 45%;
+}
+.app ul li:nth-child(3) .open{
+    margin-top: 5px;
+    color: #fff;
+}
+.app ul li:nth-child(3) .des{
+    color: #7e7e7e;
+}
+.app ul li:nth-child(4){
+    width: 30%;
+    background-color: #CD2525;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+}
+
+
+/* 搜索区域
+    解决方案可以使用bfc
+    可以使用定位
+*/
+.search-area{
+    position: fixed;
+    /* min-width: 320px;
+    max-width: 640px;
+    width: 100%;  固定定位需要设置宽度*/
+    min-width: 320px;
+    max-width: 640px;
+    width: 100%;
+    height: 44px;
+    background-color: #C82519;
+    overflow: hidden;
+}
+.search-area .left{
+    width: 40px;
+    height: 44px;
+    float: left;
+    margin-right: 10px;
+}
+.search-area .left::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../img/fenlei.png) no-repeat center/20px 20px;
+}
+.search-area .right{
+    width: 40px;
+    height: 44px;
+    float: right;
+    margin-left: 10px;
+    color:#fff;
+    line-height: 44px;
+    font-size: 14px;
+}
+
+.search-area .main{margin-top: 7px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+
+}
+.search-area .main .jd-logo{
+    position: relative;
+    top: 5px;
+    margin-left: 5px;
+    width: 25px;
+    height: 20px;
+    background: url(../img/jd-sprites.png) no-repeat 5px 3px/200px 200px;
+    padding-right: 5px;
+    border-right: 1px solid #ccc;
+}
+.search-area .main .jd-logo::after{
+    width: 20px;
+    content: '';
+    height: 20px;
+    display: block;
+    margin-left: 40px;
+    background: url(../img/jd-sprites.png) no-repeat -82px 4px /200px 200px;
+}
+.search-area .main .input{
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    top: 8px;
+    left: 70px;
+    color:#999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.show{
+    height: 150px;
+}
+
+.main-content {
+    margin-top:40px;
+    height: 80px;
+    border-radius: 0 0 20px 20px;
+}
+.main-content .slider {
+    display: block;
+    overflow: hidden;
+   background: url(../img/bgcRed.png) no-repeat ;
+   background-size: 100%;
+}
+.main-content .slider img{
+    width: 92%;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    height: 130px;
+}
+
+.brand div{
+    float: left;
+    width: 33.33%;
+}
+.brand div img{
+    width: 100%;
+    height: 100px;
+}
+
+
+/* nav */
+.nav a{
+    float: left;
+    width: 20%;
+    text-align: center;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.nav a img{
+    width: 50%;
+}
+
+

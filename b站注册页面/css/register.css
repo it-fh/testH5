@@ -1,0 +1,240 @@
+.Img {
+    height: 86px;
+    background-color: #00a1d6;
+    min-width:982px;
+}
+
+.topImg {
+    height: 105px;
+    background: url(../img/bibiliRegister.png) no-repeat center/980px;
+}
+
+.form {
+    width: 982px;
+    margin: 114px auto;
+}
+
+.form h2 {
+    height: 20px;
+    font-size: 38px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 85px;
+}
+
+.form h2 span {
+    background-color: #fff;
+    padding: 0 10px;
+}
+
+.form .form-area {
+    width: 420px;
+    height: 390px;
+    margin: 0 auto;
+}
+
+.form .form-item {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.form-item input[type='text'],
+.form-item input[type='password'] {
+    box-sizing: border-box;
+    width: 420px;
+    height: 40px;
+    border: 1px solid #dcdfe6;
+    text-indent: 1em;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.form-item input[type='text']::placeholder,
+.form-item input[type='password']::placeholder {
+    color: #bbb;
+}
+
+.form-item input[type='text']:focus,
+.form-item input[type='password']:focus {
+    border-color: #00a1d6;
+    ;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.form-item .select-area,
+.form-item .input {
+    float: left;
+}
+
+.form-item .select-area {
+    position: relative;
+}
+
+.form-item .select-area {
+    width: 133px;
+    height: 40px;
+}
+
+.form-item .select-area .title {
+    height: 40px;
+    color: #909399;
+    text-align: center;
+    line-height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.form-item .select-area ul {
+    display: none;
+    margin-top: 10px;
+    height: 260px;
+    background-color: #fff;
+    position: absolute;
+    width: 131px;
+    border: 1px solid #ccc;
+    overflow-y: auto;
+    z-index: 1;
+  
+}
+
+.form-item .select-area ul li {
+    line-height: 40px;
+    padding: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.form-item .input {
+    width: 287px;
+    
+}
+
+.form-item .input input {
+    width: 287px;
+    border-radius: 0 8px 8px 0;
+}
+
+.form .form-item .valInput+button {
+    width: 130px;
+    height: 36px;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    background-color: #32B4DE;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.agree {
+    margin: -30px 0;
+}
+
+.biliyes {
+    font-size: 12px;
+}
+
+.biliyes a {
+
+    color: #00a1d6;
+}
+
+.agree input[type='checkbox'] {
+    display: none;
+}
+
+.agree label {
+    font-size: 12px;
+}
+
+.agree input[type='checkbox']+.mybox {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #ccc;
+    position: relative;
+    margin: 4px 4px 0 2px;
+    vertical-align: bottom;
+}
+
+.agree input[type='checkbox']:checked+.mybox {
+    border: 1px solid #00a1d6;
+}
+
+.agree input[type='checkbox']:checked+.mybox::after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    border-radius: 2px;
+    background-color: #00a1d6;
+    top: 1.6px;
+    left: 2px;
+
+}
+
+.form-item:nth-of-type(5) {
+    margin-bottom: 10px;
+}
+
+.form-item button[type='button'] {
+    width: 420px;
+    height: 40px;
+    background-color: #32B4DE;
+    border: 1px solid #32B4DE;
+    color:#fff;
+    border-radius: 6px;
+}
+
+/* 按钮禁用状态下才会生效的样式 */
+.form-item button[type='button']:disabled{
+    background-color: #F5F5F5;
+    border: 1px solid #D9D9D9;
+    color:#ccc;
+}
+
+.form-item:nth-of-type(6) {
+    margin-bottom: 10px;
+}
+
+.form .login {
+    font-size: 12px;
+    color: #00a1d6;
+    text-align: right;
+}
+
+
+
+/* 以下是方便js控制 */
+.form .form-item .error {
+
+    width: 270px;
+    height: 30px;
+    position: absolute;
+    line-height: 30px;
+    top: 4px;
+    right: -278px;
+    font-size: 12px;
+    color: #f07cc3;
+
+    /* 默认是隐藏的 */
+    display: none;
+}
+
+.form .form-item.hasError .error{
+    display: block;
+}
+
+/* 这样js就可以通过hasError 来控制其他样式了 */
+.form .form-item.hasError input{
+    border: 1px solid #f07cc3;
+}
+
